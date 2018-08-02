@@ -1,0 +1,11 @@
+<!-- Global site tag (gtag.js) -->
+<?php if ($block->isGlobalTagEnabled()) : ?>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-<?= $block->getConversionId(); ?>"></script>
+<?php endif; ?>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-<?= $block->getConversionId(); ?>');
+</script>

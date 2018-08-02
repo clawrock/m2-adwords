@@ -1,0 +1,9 @@
+<script>
+    gtag('event', 'conversion', {
+      'send_to': 'AW-<?= $block->getConversionId() . '/' . $block->getConversionLabel(); ?>',
+      'value': '<?= $block->getConversionValue(); ?>',
+      'currency': 'USD',
+      'transaction_id': ''
+    });
+    gtag('config', 'AW-<?= $block->getConversionId() ?>');
+</script>
