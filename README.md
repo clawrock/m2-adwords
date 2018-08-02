@@ -1,5 +1,5 @@
 # Magento2 Google AdWords
-New AdWords conversion tracking module for Magento2.
+New AdWords conversion tracking Magento2 module. Compatible with 2.1 and 2.2 versions.
 
 ## Installation (using composer)
 1. `composer require clawrock/m2-adwords`
